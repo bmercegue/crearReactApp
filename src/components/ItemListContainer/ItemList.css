@@ -1,0 +1,14 @@
+section{
+    box-shadow: 0 0  5px #ccc;
+    padding:15px 10px;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+
+

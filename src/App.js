@@ -1,14 +1,16 @@
-import {NavBar} from './components/NavBar/NavBar';
-import {ItemListContainer} from './components/ItemListContainer/ItemListContainer';
-import {CartWidget} from './components/NavBar/CartWidget/CartWidget';
+import { NavBar } from './components/NavBar/NavBar';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import './Styles/App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
+  
+
   return (
     <div>
       <NavBar/>
-
-      <ItemListContainer title="Tienda de Ropa Vintage"/> 
+      <ItemListContainer/> 
     </div>
     
   );
