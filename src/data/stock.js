@@ -13,66 +13,75 @@ const shirt3 = require('../images/shirts/shirt3.jpeg').default
 
 export const stock = [
     {
-        id: "dress1",
+        id: 1,
+        categoria: 'vestidos',
         nombre: "Pants Corto V&",
         desc: "Pantalón Corto Marrón, Talla S",
         precio: "10.000 CLP",
         img: dress1
     },
     {
-        id: "dress2",
+        id: 2,
+        categoria: 'vestidos',
         nombre: "Vestido M&B",
         desc: "Vestido Color Marrón, Talla S",
         precio: "18600 CLP",
         img: dress2
     },
     {
-        id: "dress3",
+        id: 3,
+        categoria: 'vestidos',
         nombre: "Vestido A&B",
         desc: "Vestido Color Azul, Talla M",
         precio: "15600 CLP",
         img: dress3
     },
     {
-        id: "pants1",
+        id: 4,
+        categoria: 'jeans',
         nombre: "Jeans Retro 1",
         desc: "Jeans Talla M",
         precio: "12000 CLP",
         img: pants1
     },
     {
-        id: "pants2",
+        id: 5,
+        categoria: 'jeans',
         nombre: "Jeans Retro 2",
         desc: "Jeans Talla M",
         precio: "12000 CLP",
         img: pants2
     },
     {
-        id: "pants3",
+        id: 6,
+        categoria: 'jeans',
         nombre: "Jeans Retro 3",
         desc: "Jeans Talla M",
         precio: "12000 CLP",
         img: pants3
     },
     {
-        id: "shirt1",
-        nombre: "T-Shirt STM 1",
-        desc: "Shirt Talla M",
+        id: 7,
+        categoria: 'poleras',
+        nombre: "Polera STM 1",
+        desc: "Polera Talla M",
         precio: "5600 CLP",
         img: shirt1
     },
     {
-        id: "shirt2",
-        nombre: "T-Shirt STM 2",
-        desc: "T-Shirt Talla S",
+        id: 8,
+        categoria: 'poleras',
+        nombre: "Polera STM 2",
+        desc: "Polera Talla S",
         precio: "5600 CLP",
         img: shirt2
     },
     {
-        id: "shirt3",
-        nombre: "T-Shirt STM 3",
-        desc: "T-Shirt Talla S",
+        id: 9,
+        categoria: 'poleras',
+        nombre: "Polera STM 3",
+        desc: "Polera Talla S",
         precio: "5600 CLP",
         img: shirt3
-    },
+    }
 ]

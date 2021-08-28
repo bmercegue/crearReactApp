@@ -26,9 +26,9 @@
     margin: 10px 0;
 }
 
-.card h3 a{
+.box a{
     text-decoration:none;
-    color:#333;
+    color:rgb(62, 61, 61);
 }
 
 .card h3:hover{
@@ -53,5 +53,5 @@
     height:40px;
     display:block;
     cursor:pointer;
-    margin: 15px 0;
+    margin: 10px 0;
 }
