@@ -1,0 +1,14 @@
+.footer{
+    min-height: 80px;
+    background: violet;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;;
+}
+
+.footer p{
+    color:cornsilk;
+    position:absolute;
+}

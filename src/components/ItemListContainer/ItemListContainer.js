@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { pedirDatos } from '../../helpers/pedirDatos'
 import { useParams } from 'react-router-dom'
+import { UIContext } from '../../context/UIContext'
 import { ItemList } from './ItemList'
-
+import './ItemList.css'
+import Loader from '../Loader'
 
 export const ItemListContainer = () => {
 
+    const {loading, setLoading} = useContext(UIContext)
     const { catId } = useParams()
 
     const [data, setData] =useState([])
-    const [loading, setLoading] = useState(false)
-
 
     useEffect( ()=> {
         setLoading(true)
@@ -35,8 +36,18 @@ export const ItemListContainer = () => {
     return (
         <>
             {loading 
-            ? <h2>Cargando...</h2>
-            : <ItemList productos={data}/>
+            ? 
+            <div className="loaderContainer">
+                <div className="loader">
+                 <Loader/>   
+                </div>    
+            </div>               
+            :
+            <div className="catContainer">
+            <hr/>
+                <h2>{catId}</h2>
+                <ItemList productos={data}/>
+            </div>
             }
         </>
     )

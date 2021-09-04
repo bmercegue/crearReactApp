@@ -1,43 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
-}
-
 header{
-    min-height: 80px;
+    min-height: 100px;
     background: violet;
     overflow:hidden;
-}
-
-.navbar{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
+    justify-content:space-evenly;
 }
 
-.navbar .logo{
-    margin-left:50px; 
-    letter-spacing:2px;   
+header .logo{
+    margin-right:40px; 
+    color:blueviolet;
 }
 
-.navbar a{
+header a{
     color:white;
     text-decoration: none;
-}
-
-.menu li{ 
-    display:inline-block;
-    text-align:center;
-    margin-right:2rem;
-    opacity:0.8;
-}
-
-.menu a:hover{
-    color:mediumslateblue;
-}
-
-.cart{
-    margin-right:40px;
+    display:flex;
+    padding: 0 10px;
+    margin: 0px 30px;
 }

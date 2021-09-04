@@ -1,0 +1,42 @@
+.cartContainer{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin: 35px 0;
+    min-height:100vh;
+}
+
+.cartContainer .container{
+    display: inline-block;
+}
+
+.itemContent{
+    text-align:center;
+    margin: 15px;
+}
+
+.itemContent h3{
+    font-size:24px;
+}
+
+.itemContent p{
+    font-size:17px;
+}
+
+.cartContainer h1{
+    padding: 10px;
+    text-align:center;
+}
+
+.eliminar{
+    background-color: crimson;
+    width: 100px;
+    height:30px;
+    color:white;
+    display:inline-block;
+    border:none;
+}
+
+.btn-danger{
+    margin:5px;
+}
