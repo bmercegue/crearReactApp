@@ -1,14 +1,46 @@
-.footer{
-    min-height: 80px;
-    background: violet;
-    overflow:hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;;
+#bottom-nav{
+    background-color: darkorchid !important;
 }
 
-.footer p{
-    color:cornsilk;
-    position:absolute;
+#bottom-nav a{
+    color: #dcdde1;
+}
+
+#bottom-nav a:hover{
+    color:plum;
+}
+
+#bottom-nav .text-success{
+    color: darkslateblue !important;
+}
+
+#bottom-nav ul.footer-link-list li{
+    padding-top:10px;
+    margin-left:5px;
+}
+
+
+#bottom-nav ul.footer-icons li{
+    width:2.8em;
+    height:2.8em;
+    line-height:2.6em;
+}
+
+#bottom-nav span{
+    font-size:16px;
+    margin:10px;
+}
+
+#bottom-nav ul.footer-icons li:hover{
+    background-color:#cfd6e1;
+    transition:5s;
+}
+
+#subscribeEmail{
+    height:40px;
+}
+
+#subscribeText{
+    width:100px;
+    border: 1px solid #cfd6e1;
 }

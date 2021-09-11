@@ -28,6 +28,7 @@ export const ItemDetail = ({categoria, id, nombre, desc, img, precio, stock}) =>
                         <span>${precio}</span> 
                         <p>{desc}</p>  
                     </div>  
+                    
                     <Contador 
                         max={stock}
                         cantidad={cantidad}
@@ -38,8 +39,7 @@ export const ItemDetail = ({categoria, id, nombre, desc, img, precio, stock}) =>
                     <Link to={`/categoria/${categoria}`} className="category">
                         <span className="link">Ver más productos</span>
                     </Link>                           
-                </div>
-                    
+                </div>                   
             </div>
     )
 }

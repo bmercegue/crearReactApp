@@ -1,18 +1,18 @@
-const dress1 = require('../images/dresses/dress1.jpeg').default
-const dress2 = require('../images/dresses/dress2.jpeg').default
-const dress3 = require('../images/dresses/dress3.jpeg').default
+    // const dress1 = require("../images/dress1.jpeg").default
+    // const dress2 = require("../images/dress2.jpeg").default
+    // const dress3 = require("../images/dress3.jpeg").default
 
-const pants1 = require('../images/pants/pants1.jpeg').default
-const pants2 = require('../images/pants/pants2.jpeg').default
-const pants3 = require('../images/pants/pants3.jpeg').default
+    // const pants1 = require("../images/pants1.jpeg").default
+    // const pants2 = require("../images/pants2.jpeg").default
+    // const pants3 = require("../images/pants3.jpeg").default
 
-const shirt1 = require('../images/shirts/shirt1.jpeg').default
-const shirt2 = require('../images/shirts/shirt2.jpeg').default
-const shirt3 = require('../images/shirts/shirt3.jpeg').default
+    // const shirt1 = require("../images/shirt1.jpeg").default
+    // const shirt2 = require("../images/shirt2.jpeg").default
+    // const shirt3 = require("../images/shirt3.jpeg").default
 
-const sweater1 = require('../images/sweaters/sweater1.jpeg').default
-const sweater2 = require('../images/sweaters/sweater2.jpeg').default
-const sweater3 = require('../images/sweaters/sweater3.jpeg').default
+    // const sweater1 = require("../images/sweater1.jpeg").default
+    // const sweater2 = require("../images/sweater2.jpeg").default
+    // const sweater3 = require("../images/sweater3.jpeg").default
 
 
 export const stock = [
@@ -92,37 +92,37 @@ export const stock = [
         id: 9,
         categoria: 'poleras',
         nombre: "Polera STM 3",
-        desc: "Polera Talla S",
-        precio: 5600,
+        desc: "Polera Talla M",
+        precio: 6000,
         img: shirt3,
         stock: 3
     },
     {
-    id: 10,
-    categoria: 'sweaters',
-    nombre: "Sweater STM 1",
-    desc: "Sweater Talla S",
-    precio: 6000,
-    img: sweater1,
-    stock: 2
+        id: 10,
+        categoria: 'sweaters',
+        nombre: "Sweater STM 1",
+        desc: "Sweater Talla S",
+        precio: 6000,
+        img: sweater1,
+        stock: 2
     },
     {
-    id: 11,
-    categoria: 'sweaters',
-    nombre: "Sweater STM 2",
-    desc: "Sweater Talla S",
-    precio: 6000,
-    img: sweater2,
-    stock: 2
+        id: 11,
+        categoria: 'sweaters',
+        nombre: "Sweater STM 2",
+        desc: "Sweater Talla S",
+        precio: 6000,
+        img: sweater2,
+        stock: 2
     },
     {
-    id: 12,
-    categoria: 'sweaters',
-    nombre: "Sweater STM 3",
-    desc: "Sweater Talla L",
-    precio: 6000,
-    img: sweater3,
-    stock: 2
+        id: 12,
+        categoria: 'sweaters',
+        nombre: "Sweater STM 3",
+        desc: "Sweater Talla L",
+        precio: 6500,
+        img: sweater3,
+        stock: 2
     }
 
 ]

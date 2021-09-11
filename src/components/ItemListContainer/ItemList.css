@@ -27,6 +27,7 @@
     text-transform: uppercase;
     margin: 10px;
     color:indigo;
+    max-height:100vh;
 }
 
 .title{

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../ItemDetailContainer/ItemDetail.css'
+import '../Contador/Contador.css'
+import { FaStore } from 'react-icons/fa'
+import { FaTruck } from 'react-icons/fa'
 
 
 export const Contador = ({max, cantidad, setCantidad, agregar, agregado}) => {
@@ -29,21 +31,19 @@ export const Contador = ({max, cantidad, setCantidad, agregar, agregado}) => {
                             <button className="btn btn-outline-dark" onClick={handleRestar}>-</button>
                             <p className="cantidad">{cantidad}</p>
                             <button className="btn btn-outline-dark" onClick={handleSumar}>+</button>                                               
-                            <Link to={`/cart`} className="cart">
-                                <button className="btn btn-primary" onClick={agregar}>Agregar al carrito</button>
-                            </Link>
+                            <button className="btn btn-success" onClick={agregar}>Agregar al carrito</button>
                         </div>
                 }       
                         <hr/>
-                        <h4>Tipo de entrega</h4>
-                        <i class="fas fa-truck"></i>
+                        <h5>Tipo de entrega</h5>
+                        <i className="compra-icon"><FaTruck/></i>
                         <span></span>
                         <h6>Despacho a domicilio</h6>
-                        <p>Recibe tu compra en 10 días hábiles</p>
-                        <i class="fas fa-store"></i>
+                        <p className="compra">Recibe tu compra en 10 días hábiles</p>
+                        <i className="compra-icon"><FaStore/></i>
                         <span></span>
                         <h6>Retiro en tienda</h6>
-                        <p>Solo para Región Metropolitana</p>
+                        <p className="compra">Solo para Región Metropolitana</p>
                         <hr/>
             </div>                                         
         </>
