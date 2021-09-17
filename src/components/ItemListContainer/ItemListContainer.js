@@ -2,10 +2,9 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { UIContext } from '../../context/UIContext'
 import { ItemList } from './ItemList'
-import './ItemList.css'
+import './ItemListContainer.css'
 import { Loader } from '../Loader/Loader'
 import { getFirestore } from '../../firebase/config'
-
 
 
 export const ItemListContainer = () => {
@@ -13,7 +12,7 @@ export const ItemListContainer = () => {
     const {loading, setLoading} = useContext(UIContext)
     const { catId } = useParams()
 
-    const [data, setData] =useState([])
+    const [data, setData] = useState([])
 
     useEffect( ()=> {
         setLoading(true)

@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
-import { CartContext } from '../../context/CartContext'
-import { BsFillTrashFill } from 'react-icons/bs'
 import './CartScreen.css'
 import { Link } from 'react-router-dom'
+import { CartContext } from '../../context/CartContext'
+import { BsFillTrashFill } from 'react-icons/bs'
+
 
 export const CartScreen = () => {
 
@@ -10,7 +11,7 @@ export const CartScreen = () => {
 
     return (
         <div className="cartContainer">
-            <h1>Resumen de tu compra</h1>
+            <h1>Carrito de compras</h1>
             <hr/>
                 {carrito.map(prod => (
                 <div key={prod.id} className="itemContent">
@@ -18,15 +19,22 @@ export const CartScreen = () => {
                     <h3>{prod.nombre}</h3>
                     <p>Cantidad: {prod.cantidad}</p>
                     <p>Precio: ${prod.precio * prod.cantidad}</p>
-                    <BsFillTrashFill onClick={() => eliminarDelCarrito(prod.id)}/>
+                    <button className="btn btn-danger">
+                        <BsFillTrashFill onClick={() => eliminarDelCarrito(prod.id)}/>
+                    </button>
                 </div>
                 ))}
 
                 <hr/>
-                <div classname="botonCarrito">
+                <div classname="botonContainer">
                     <button className="btn btn-danger" onClick={vaciarCarrito}>Vaciar Carrito</button>
-                    <button className="btn btn-outline-dark"><Link to={"/"}>Ver más productos</Link></button>
+                    <Link to="/checkout">
+                        <button className="btn btn-success mx-3">Terminar compra</button>
+                    </Link> 
 
+                    <hr/>
+
+                    <p className="btn btn-outline-dark"><Link to={"/"}>Ver más productos</Link></p>
                 </div>                                      
         </div>                                       
     )

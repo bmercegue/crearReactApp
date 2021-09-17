@@ -1,12 +1,12 @@
 import React from 'react'
-import './NavBar.css'
+import './Navbar.css'
 import { Link } from 'react-router-dom'
 import { FaSearch } from 'react-icons/fa'
 import { CartWidget } from '../CartWidget/CartWidget'
 import { FaUser } from 'react-icons/fa'
 
 
-export const NavBar = () => {
+export const Navbar = () => {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light shadow">
@@ -22,13 +22,19 @@ export const NavBar = () => {
                     <div className="flex-fill">
                         <ul className="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                             <li className="nav-item">
-                                <Link to={"/"} className="nav-link">INICIO</Link>
+                                <Link to={"/catalogo"} className="nav-link">PRODUCTOS</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/productos"} className="nav-link">PRODUCTOS</Link>
+                                <Link to={"/categoria/vestidos"} className="nav-link">Vestidos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/login"} className="nav-link">LOGIN</Link>
+                                <Link to={"/categoria/jeans"} className="nav-link">Jeans</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={"/categoria/poleras"} className="nav-link">Poleras</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link to={"/categoria/sweaters"} className="nav-link">Sweaters</Link>
                             </li>
                         </ul>
                     </div>

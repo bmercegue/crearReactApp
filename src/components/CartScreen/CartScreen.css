@@ -24,7 +24,7 @@
     font-size:17px;
 }
 
-.botonCarrito{
+.botonContainer{
     display:flex;
     flex-wrap:wrap;
     margin:5px;

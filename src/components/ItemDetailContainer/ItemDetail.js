@@ -37,7 +37,7 @@ export const ItemDetail = ({categoria, id, nombre, desc, img, precio, stock}) =>
                         agregado={isInCart(id)}
                     />
                     <Link to={`/categoria/${categoria}`} className="category">
-                        <span className="link">Ver más productos</span>
+                        <span className="link">Volver a productos</span>
                     </Link>                           
                 </div>                   
             </div>

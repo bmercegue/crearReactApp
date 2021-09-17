@@ -6,7 +6,6 @@ import { FaTruck } from 'react-icons/fa'
 
 
 export const Contador = ({max, cantidad, setCantidad, agregar, agregado}) => {
-    console.log(agregado)
 
     const handleSumar = () => {
         if (cantidad < max) {

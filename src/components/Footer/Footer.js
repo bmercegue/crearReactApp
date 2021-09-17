@@ -73,13 +73,13 @@ export const Footer = () => {
                             <div className="col-auto">
                                 <div className="input-group mb-2">
                                     <input type="text" className="form-control bg-dark border-light" id="subscribeEmail" placeholder="Ingresa tu email"></input>
-                                    <div className="input-group-text btn-success text-light" id="subscribeText">Subscribir</div>
+                                    <div className="input-group-text btn-success text-light" id="subscribeText">Suscribir</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="w-100 bg-black py-3">
+                    <hr/>
+                    <div className="w-100 py-3">
                         <div className="container">
                             <div className="row pt-2">
                                 <div className="col-12">
