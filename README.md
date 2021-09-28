@@ -37,11 +37,12 @@ React icons: uso de algunos íconos para dar mejor visibilidad al usuario.
 FireBase: almacenamiento de datos, como las imágenes de cada producto.
 ​
 Sweet Alert2: uso de alertas o avisos para el usuario al momento de realizar un pedido. 
+
 ​
 ###### Sitio en funcionamiento
 
 - Archivo 'GIF'
-
+- Vista local : http://localhost:3000/
 
 ​
 ###### Autor
