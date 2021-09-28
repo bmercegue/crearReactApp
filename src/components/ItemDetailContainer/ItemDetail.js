@@ -26,7 +26,8 @@ export const ItemDetail = ({categoria, id, nombre, desc, img, precio, stock}) =>
                     <div className="row">
                         <h2>{nombre}</h2>
                         <span>${precio}</span> 
-                        <p>{desc}</p>  
+                        <p>{desc}</p> 
+                        <p className="stock">Stock: {stock}</p> 
                     </div>  
                     
                     <Contador 
@@ -37,7 +38,7 @@ export const ItemDetail = ({categoria, id, nombre, desc, img, precio, stock}) =>
                         agregado={isInCart(id)}
                     />
                     <Link to={`/categoria/${categoria}`} className="category">
-                        <span className="link">Volver a productos</span>
+                        <span>Volver a productos</span>
                     </Link>                           
                 </div>                   
             </div>

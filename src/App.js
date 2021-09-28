@@ -10,6 +10,7 @@ import { UIContextProvider } from './context/UIContext';
 import { CartScreen } from './components/CartScreen/CartScreen';
 import { Footer } from './components/Footer/Footer'
 import { Checkout } from './components/Checkout/Checkout';
+import { Login } from './components/Login/Login'
 
 function App() {
   return (
@@ -17,45 +18,45 @@ function App() {
       
       <UIContextProvider>
         <CartProvider>
-          <BrowserRouter>    
-          <Navbar/>
+          <BrowserRouter>
+            <Navbar/>
 
-          <Switch>
-            <Route exact path="/">
-              <IndexComponent/>
-            </Route>
+              <Switch>
+              <Route exact path="/">
+                <IndexComponent/>
+              </Route>
 
-            <Route exact path="/catalogo">
-            <ItemListContainer/>
-            </Route>
-
-            <Route exact path="/categoria/:catId">
+              <Route exact path="/catalogo">
               <ItemListContainer/>
-            </Route>
+              </Route>
 
-            <Route exact path="/detail/:itemId">
-              <ItemDetailContainer/>        
-            </Route>
+              <Route exact path="/categoria/:catId">
+                <ItemListContainer/>
+              </Route>
 
-            <Route exact path="/cart">
-              <CartScreen/>
-            </Route>
+              <Route exact path="/detail/:itemId">
+                <ItemDetailContainer/>        
+              </Route>
 
-            <Route exact path="/checkout">
-              <Checkout/>
-            </Route>
+              <Route exact path="/cart">
+                <CartScreen/>
+              </Route>
 
-            <Route exact path="/login">
-            <h1>...En construcción</h1>
-            </Route>          
+              <Route exact path="/checkout">
+                <Checkout/>
+              </Route>
+
+              <Route exact path="/login">
+                <Login/>
+              </Route>          
+            
+              <Route path="*">
+                <Redirect to="/"/>
+              </Route>  
           
-            <Route path="*">
-              <Redirect to="/"/>
-            </Route>  
-          </Switch>
+              </Switch>
+              <Footer/>
 
-          <Footer/> 
-        
           </BrowserRouter>
           </CartProvider>
         </UIContextProvider>

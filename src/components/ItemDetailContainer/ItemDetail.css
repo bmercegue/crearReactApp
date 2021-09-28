@@ -12,18 +12,27 @@
     height:450px;
     display:block;
     object-fit:cover;
-    margin: 25px;
+    margin: 20px;
 }
 
 .details .content{
     max-width: 500px;
     min-width:290px;
-    margin:25px;
+    margin:10px;
     text-align:center;
+    color:darkorchid;
+}
+
+.content h2{
+    color:darkviolet;
+}
+
+.content h5{
+    color:darkslateblue;
 }
 
 .content .row{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .row h2{
@@ -39,8 +48,9 @@
 
 .content p{
     font-size: 20px;
-    line-height:1.5;
+    line-height:1;
     margin: 15px 0;
+    color:darkslateblue;
 }
 
 .category{ 
@@ -64,4 +74,10 @@
 
 .cart button:hover{
     background-color: indigo;
+}
+
+.content .stock{
+    font-size:15px;
+    color:darkviolet;
+    font-style: oblique;
 }

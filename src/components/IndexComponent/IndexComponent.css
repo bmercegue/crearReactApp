@@ -1,5 +1,6 @@
 .single-hero{
-    height:820px;
+    height:130vh;
+    width:100%;
     background-image: url(./vintage-banner.jpeg);
     background-position: center center;
     background-size:cover;
@@ -18,7 +19,6 @@
     top: -5px;
     right: -15px;
     bottom: -5px;
-    width: calc(100% + 30%);
     height: calc(100% + 10%);
     background: #fff;
     opacity: .5;

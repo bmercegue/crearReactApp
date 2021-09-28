@@ -52,7 +52,6 @@ export const ItemListContainer = () => {
             <Loader/>                 
             :
             <div className="catContainer">
-            <hr/>
                 <h2>{catId}</h2>
                 <ItemList productos={data}/>
             </div>

@@ -1,6 +1,5 @@
 import React from 'react'
 import './Footer.css'
-import { Link } from 'react-router-dom'
 import { FaLocationArrow } from 'react-icons/fa'
 import { FaPhone } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
@@ -33,17 +32,17 @@ export const Footer = () => {
                     </div>
 
                     <div className="col-md-4 pt-5">
-                        <h2 className="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                        <h2 className="text-light border-bottom pb-3 border-light">Productos</h2>
                         <ul className="list-unstyled text-light footer-link-list">
-                            <li className="text-decoration-none"><Link to={"/categoria/vestidos"}>Vestidos</Link></li>
-                            <li className="text-decoration-none"><Link to={"/categoria/jeans"}>Jeans</Link></li>
-                            <li className="text-decoration-none"><Link to={"/categoria/poleras"}>Poleras</Link></li>
-                            <li className="text-decoration-none"><Link to={"/categoria/sweaters"}>Sweaters</Link></li>
+                            <li className="text-decoration-none">Vestidos</li>
+                            <li className="text-decoration-none">Jeans</li>
+                            <li className="text-decoration-none">Poleras</li>
+                            <li className="text-decoration-none">Sweaters</li>
                         </ul>
                     </div>
 
                     <div className="col-md-4 pt-5">
-                        <h2 className="h2 text-light border-bottom pb-3 border-light">Más info</h2>
+                        <h2 className="text-light border-bottom pb-3 border-light">Más info</h2>
                         <ul className="list-unstyled text-light footer-link-list">
                             <li className="text-decoration-none">Inicio</li>
                             <li className="text-decoration-none">Reutiliza</li>
@@ -70,11 +69,10 @@ export const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                            <div className="col-auto">
-                                <div className="input-group mb-2">
-                                    <input type="text" className="form-control bg-dark border-light" id="subscribeEmail" placeholder="Ingresa tu email"></input>
-                                    <div className="input-group-text btn-success text-light" id="subscribeText">Suscribir</div>
-                                </div>
+                        <div className="col-auto">
+                            <div className="input-group mb-2">
+                                <input type="text" className="form-control bg-dark border-light" id="subscribeEmail" placeholder="Ingresa tu email"></input>
+                                <div className="input-group-text btn-success text-light" id="subscribeText">Suscribir</div>
                             </div>
                         </div>
                     </div>
@@ -90,6 +88,7 @@ export const Footer = () => {
                             </div>
                         </div>
                     </div>
+            </div>
         </footer>
     )
 }

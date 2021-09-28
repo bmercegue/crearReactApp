@@ -34,7 +34,7 @@ export const Checkout = () => {
                         icon: 'success',
                         title: 'Gracias por tu preferencia. Tu pedido ha sido registrado',
                         text: `Pedido Nº: ${res}`,
-                        confirmButtonText: 'OK'
+                        confirmButtonText: 'Aceptar'
                     })
 
                     vaciarCarrito()
@@ -55,17 +55,15 @@ export const Checkout = () => {
     return (
 
         <div className="checkoutContainer">         
-            <h3>BeaStore - CHECKOUT</h3>
-            <h2>Información personal</h2>
+            <h2 className="checkTitle">CHECKOUT - BeaStore</h2>
             <hr/>
-
         {!carrito.length
             ? <Redirect to="/"/>
             :
           
             <div className="infoCheckout">
                 <form onSubmit={handleSubmit}>
-                    <legend> Ingresa tus datos para completar tu compra</legend>
+                    <legend> Ingresa tus datos para completar tu pedido</legend>
                     <input
                         type="text"
                         name="nombre"
@@ -94,7 +92,9 @@ export const Checkout = () => {
                         required
                     />
                     <div className="checkoutButtons">                    
-                        <Link to={'/catalogo'}>Seguir comprando</Link>
+                        <Link to={'/catalogo'}>
+                            <p>Seguir comprando</p>
+                        </Link>
                         <button type="submit">Enviar</button>
                     </div>    
                 </form>               

@@ -36,11 +36,9 @@ export const Contador = ({max, cantidad, setCantidad, agregar, agregado}) => {
                         <hr/>
                         <h5>Tipo de entrega</h5>
                         <i className="compra-icon"><FaTruck/></i>
-                        <span></span>
                         <h6>Despacho a domicilio</h6>
                         <p className="compra">Recibe tu compra en 10 días hábiles</p>
                         <i className="compra-icon"><FaStore/></i>
-                        <span></span>
                         <h6>Retiro en tienda</h6>
                         <p className="compra">Solo para Región Metropolitana</p>
                         <hr/>

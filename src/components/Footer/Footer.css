@@ -1,5 +1,6 @@
 #bottom-nav{
     background-color: darkorchid !important;
+    width:100%;
 }
 
 #bottom-nav a{
@@ -11,14 +12,14 @@
 }
 
 #bottom-nav .text-success{
-    color: darkslateblue !important;
+    color:whitesmoke !important;
+    font-weight: 700;
 }
 
 #bottom-nav ul.footer-link-list li{
     padding-top:10px;
     margin-left:5px;
 }
-
 
 #bottom-nav ul.footer-icons li{
     width:2.8em;
@@ -36,11 +37,9 @@
     transition:5s;
 }
 
-#subscribeEmail{
-    height:40px;
-}
-
 #subscribeText{
     width:100px;
     border: 1px solid #cfd6e1;
+    justify-content:center;
+    margin:10px;
 }
